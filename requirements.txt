@@ -7,4 +7,4 @@ plotly==4.14.1
 sphinx-thebe==0.0.8
 cookiecutter==1.7.2
 numpy==1.18.0
-ghp-import==1.0.1
+ghp-import==1.0.0
