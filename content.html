@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content in Jupyter Book &#8212; Minería de Textos</title>
     
-  <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -31,16 +31,16 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/estilos.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
@@ -58,7 +58,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Markdown Files" href="markdown.html" />
-    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
+    <link rel="prev" title="Aplicaciones de la minería de textos" href="bloque3.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -91,19 +91,63 @@
     <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="intro.html">
-   Welcome to your Jupyter Book
+   Materiales de Minería de Textos
   </a>
  </li>
 </ul>
 <ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Content in Jupyter Book
+ <li class="toctree-l1">
+  <a class="reference internal" href="bloque1.html">
+   Introducción a la minería de textos
   </a>
  </li>
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="#jupiter-book">
-   Jupiter Book
+  <a class="reference internal" href="bloque2.html">
+   Técnicas para la minería de textos
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="bloque2_embeddings.html">
+     Representaciones de palabras y oraciones
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bloque2_recurrent.html">
+     Redes neuronales recurrentes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bloque2_transformer.html">
+     La arquitectura transformer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bloque2_pretrained.html">
+     Modelos preentrenados
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bloque2_scraping.html">
+     El raspado web
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bloque2_practica.html">
+     Práctica de representaciones de palabras
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="bloque3.html">
+   Aplicaciones de la minería de textos
+  </a>
+ </li>
+ <li class="toctree-l1 current active collapsible-parent">
+  <a class="current reference internal" href="#">
+   Content in Jupyter Book
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
@@ -190,22 +234,15 @@
         </div>
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Content in Jupyter Book
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#jupiter-book">
    Jupiter Book
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#the-mass-of-jupiter">
-     The Mass of Jupiter
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-mass-of-jupiter">
+   The Mass of Jupiter
+  </a>
  </li>
 </ul>
 
@@ -222,13 +259,13 @@
 <h1>Content in Jupyter Book<a class="headerlink" href="#content-in-jupyter-book" title="Permalink to this headline">¶</a></h1>
 <p>There are many ways to write content in Jupyter Book. This short section
 covers a few tips for how to do so.</p>
-</div>
 <div class="section" id="jupiter-book">
-<h1>Jupiter Book<a class="headerlink" href="#jupiter-book" title="Permalink to this headline">¶</a></h1>
+<h2>Jupiter Book<a class="headerlink" href="#jupiter-book" title="Permalink to this headline">¶</a></h2>
 <p>This book contains information about the planet Jupiter - the fifth planet from the sun and the largest planet in the solar system! <a class="reference internal" href="#jupiter-figure"><span class="std std-numref">Fig. 1</span></a> below shows an image of Jupiter captured by the Hubble Space Telescope on June 27, 2019.</p>
 <div class="figure align-default" id="jupiter-figure">
 <a class="reference internal image-reference" href="https://solarsystem.nasa.gov/system/resources/detail_files/2486_stsci-h-p1936a_1800.jpg"><img alt="https://solarsystem.nasa.gov/system/resources/detail_files/2486_stsci-h-p1936a_1800.jpg" src="https://solarsystem.nasa.gov/system/resources/detail_files/2486_stsci-h-p1936a_1800.jpg" style="height: 300px;" /></a>
 <p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">The beautiful planet Jupiter! Source: <a class="reference external" href="https://solarsystem.nasa.gov/resources/2486/hubbles-new-portrait-of-jupiter/?category=planets_jupiter">NASA</a>.</span><a class="headerlink" href="#jupiter-figure" title="Permalink to this image">¶</a></p>
+</div>
 </div>
 <div class="section" id="the-mass-of-jupiter">
 <h2>The Mass of Jupiter<a class="headerlink" href="#the-mass-of-jupiter" title="Permalink to this headline">¶</a></h2>
@@ -289,7 +326,7 @@ covers a few tips for how to do so.</p>
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">Welcome to your Jupyter Book</a>
+    <a class='left-prev' id="prev-link" href="bloque3.html" title="previous page">Aplicaciones de la minería de textos</a>
     <a class='right-next' id="next-link" href="markdown.html" title="next page">Markdown Files</a>
 
     </div>
@@ -297,7 +334,7 @@ covers a few tips for how to do so.</p>
     <div class="container">
       <p>
         
-          By Universidad de Alicante<br/>
+          By Universitat d'Alacant<br/>
         
             &copy; Copyright 2021.<br/>
       </p>
@@ -310,7 +347,7 @@ covers a few tips for how to do so.</p>
     </div>
 
     
-  <script src="_static/js/index.3da636dd464baa7582d2.js"></script>
+  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
 
 
     

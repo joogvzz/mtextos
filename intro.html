@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to your Jupyter Book &#8212; Minería de Textos</title>
+    <title>Materiales de Minería de Textos &#8212; Minería de Textos</title>
     
-  <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -31,16 +31,16 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/estilos.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
@@ -57,7 +57,7 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Content in Jupyter Book" href="content.html" />
+    <link rel="next" title="Introducción a la minería de textos" href="bloque1.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -90,19 +90,63 @@
     <ul class="nav sidenav_l1">
  <li class="toctree-l1 current active">
   <a class="reference internal" href="#">
-   Welcome to your Jupyter Book
+   Materiales de Minería de Textos
   </a>
  </li>
 </ul>
 <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="content.html">
-   Content in Jupyter Book
+  <a class="reference internal" href="bloque1.html">
+   Introducción a la minería de textos
   </a>
  </li>
  <li class="toctree-l1 collapsible-parent">
-  <a class="reference internal" href="content.html#jupiter-book">
-   Jupiter Book
+  <a class="reference internal" href="bloque2.html">
+   Técnicas para la minería de textos
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="bloque2_embeddings.html">
+     Representaciones de palabras y oraciones
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bloque2_recurrent.html">
+     Redes neuronales recurrentes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bloque2_transformer.html">
+     La arquitectura transformer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bloque2_pretrained.html">
+     Modelos preentrenados
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bloque2_scraping.html">
+     El raspado web
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bloque2_practica.html">
+     Práctica de representaciones de palabras
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="bloque3.html">
+   Aplicaciones de la minería de textos
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="content.html">
+   Content in Jupyter Book
   </a>
   <ul class="collapse-ul">
    <li class="toctree-l2">
@@ -184,6 +228,30 @@
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
         
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#universitat-d-alacant-curso-20202021">
+   Universitat d’Alacant, curso 2020–2021
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#novedades">
+   Novedades
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#guia-docente-y-normas-del-curso">
+   Guía docente y normas del curso
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -191,12 +259,43 @@
         
               <div>
                 
-  <div class="section" id="welcome-to-your-jupyter-book">
-<h1>Welcome to your Jupyter Book<a class="headerlink" href="#welcome-to-your-jupyter-book" title="Permalink to this headline">¶</a></h1>
-<p>This is a small sample book to give you a feel for how book content is
-structured.</p>
-<p>Check out the content pages bundled with this sample book to get started…</p>
+  <div class="section" id="materiales-de-mineria-de-textos">
+<h1>Materiales de Minería de Textos<a class="headerlink" href="#materiales-de-mineria-de-textos" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="universitat-d-alacant-curso-20202021">
+<h2>Universitat d’Alacant, curso 2020–2021<a class="headerlink" href="#universitat-d-alacant-curso-20202021" title="Permalink to this headline">¶</a></h2>
+<p><em>«This is an exciting time to be working in speech and language processing», Daniel Jurafsky, James H. Martin, 2009</em></p>
+</div>
+<div class="section" id="novedades">
+<h2>Novedades<a class="headerlink" href="#novedades" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-given tablita table">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>23 Ene</p></td>
+<td><p>El curso comienza el día 0. Por cuestiones organizativas, habrá algunas pequeñas diferencias entre el tipo de sesión (teórica o práctica) que figura en la ficha de la asignatura y la que se impartirá en cada momento. El número total de horas de teoría y prácticas impartido a final de curso se corresponderá en cualquier caso con el correcto.</p></td>
+</tr>
+<tr class="row-even"><td><p>22 Ene</p></td>
+<td><p>Se ha publicado la primera versión de los materiales de la asignatura. Estos materiales pueden pueden ir cambiando antes de la clase en la que se impartan.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="guia-docente-y-normas-del-curso">
+<h2>Guía docente y normas del curso<a class="headerlink" href="#guia-docente-y-normas-del-curso" title="Permalink to this headline">¶</a></h2>
+<p>Estos son los materiales de clase de la asignatura Minería de Textos, coordinada por el profesor <a class="reference external" href="https://www.dlsi.ua.es/~japerez/">Juan Antonio Pérez Ortiz</a> (<a class="reference external" href="https://twitter.com/japer3z">&#64;japer3z</a>) de la Universitat d’Alacant e impartida también por los profesores Borja Navarro Colorado y Yoan Gutiérrez. Para obtener información sobre la evaluación de la asignatura puedes consultar la <a class="reference external" href="http://cv1.cpd.ua.es/ConsPlanesEstudio/cvFichaAsiEEES.asp?wCodEst=C203&amp;wcodasi=34063&amp;wLengua=C&amp;scaca=2020-21">guía docente</a>. Algunos aspectos adicionales que no están recogidos en la guía son los siguientes:</p>
+<ul class="simple">
+<li><p>La asistencia a prácticas es obligatoria, aunque se puede tener un máximo de 4 faltas no justificadas. La asistencia contará indistintamente tanto si la realizas presencialmente (en las semanas que te asigne la universidad a través de la aplicación de Docencia Dual) o telemáticamente (en cualquiera de las semanas de curso, incluso en las que en principio la aplicación te permita asistir presencialmente). Si tienes alguna ocupación que te impide asistir a todas o gran parte de las prácticas incluso online, envía un justificante escaneado al profesor a través del sistema de tutoría de UACloud. Para justificar una falta puntual, envía al profesor el justificante por una tutoría de UACloud. Cada falta no justificada por encima de las permitidas, restará una parte de la nota final de prácticas.</p></li>
+<li><p>La visita (virtual en este curso) a los profesores durante sus horas de tutoría no puede ser obligatoria por cuestiones normativas, pero es muy recomendable, ya que es la oportunidad de recibir supervisión sobre tus conocimientos de la materia o la calidad del código que has desarrollado. Reserva turno a través de UACloud con anterioridad y conéctate con o sin cámara activada a la sala virtual allí indicada. Si el horario no es compatible con tu agenda, escribe al profesor e intentará encontrar un hueco fuera de dicho horario para atenderte.</p></li>
+<li><p>Las prácticas se realizan individualmente.</p></li>
+</ul>
+<p>El <code class="docutils literal notranslate"><span class="pre">código</span> <span class="pre">fuente</span></code>_ de estas páginas, escrito en MyST para Jupyter Book, está disponible en Github.</p>
+<p>.. _<code class="docutils literal notranslate"><span class="pre">código</span> <span class="pre">fuente</span></code>: https://github.com/jaspock/mtextos</p>
+<p>Puedes obtener una copia local de estas páginas (por ejemplo, para poder consultarlas sin conexión) ejecutando::</p>
+<p>wget –mirror –no-parent –convert-links –page-requisites https://jaspock.github.io/mtextos/</p>
 <div class="toctree-wrapper compound">
+</div>
 </div>
 </div>
 
@@ -228,14 +327,14 @@ structured.</p>
     
     <div class='prev-next-bottom'>
         
-    <a class='right-next' id="next-link" href="content.html" title="next page">Content in Jupyter Book</a>
+    <a class='right-next' id="next-link" href="bloque1.html" title="next page">Introducción a la minería de textos</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         
-          By Universidad de Alicante<br/>
+          By Universitat d'Alacant<br/>
         
             &copy; Copyright 2021.<br/>
       </p>
@@ -248,7 +347,7 @@ structured.</p>
     </div>
 
     
-  <script src="_static/js/index.3da636dd464baa7582d2.js"></script>
+  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
 
 
     

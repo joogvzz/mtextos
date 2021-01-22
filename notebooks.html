@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content with notebooks &#8212; Minería de Textos</title>
     
-  <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
     
   <link rel="stylesheet"
@@ -31,16 +31,16 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/estilos.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
 
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
@@ -90,19 +90,63 @@
     <ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="intro.html">
-   Welcome to your Jupyter Book
+   Materiales de Minería de Textos
   </a>
  </li>
 </ul>
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="content.html">
-   Content in Jupyter Book
+  <a class="reference internal" href="bloque1.html">
+   Introducción a la minería de textos
+  </a>
+ </li>
+ <li class="toctree-l1 collapsible-parent">
+  <a class="reference internal" href="bloque2.html">
+   Técnicas para la minería de textos
+  </a>
+  <ul class="collapse-ul">
+   <li class="toctree-l2">
+    <a class="reference internal" href="bloque2_embeddings.html">
+     Representaciones de palabras y oraciones
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bloque2_recurrent.html">
+     Redes neuronales recurrentes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bloque2_transformer.html">
+     La arquitectura transformer
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bloque2_pretrained.html">
+     Modelos preentrenados
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bloque2_scraping.html">
+     El raspado web
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bloque2_practica.html">
+     Práctica de representaciones de palabras
+    </a>
+   </li>
+  </ul>
+  <i class="fas fa-chevron-down">
+  </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="bloque3.html">
+   Aplicaciones de la minería de textos
   </a>
  </li>
  <li class="toctree-l1 current active collapsible-parent">
-  <a class="reference internal" href="content.html#jupiter-book">
-   Jupiter Book
+  <a class="reference internal" href="content.html">
+   Content in Jupyter Book
   </a>
   <ul class="current collapse-ul">
    <li class="toctree-l2">
@@ -243,14 +287,15 @@ code blocks and their outputs in your book.</p>
 <p>You an also <span class="math notranslate nohighlight">\(add_{math}\)</span> and</p>
 <div class="math notranslate nohighlight">
 \[
-math^{blocks}
+math^{blocks} \int_0^\infty x \, dx
 \]</div>
 <p>or</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{aligned}
-\mbox{mean} la_{tex} \\ \\
-math blocks
+\mbox{mean} la_{tex} \\
+math blocks \\
+\int_0^\infty x \, dx 
 \end{aligned}
 \end{split}\]</div>
 <p>But make sure you $Escape $your $dollar signs $you want to keep!</p>
@@ -304,6 +349,46 @@ For example, here’s some sample Matplotlib code:</p>
 </div>
 <p>There is a lot more that you can do with outputs (such as including interactive outputs)
 with your book. For more information about this, see <a class="reference external" href="https://jupyterbook.org">the Jupyter Book documentation</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">black_box_func</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="o">+</span><span class="mi">30</span>
+
+<span class="k">def</span> <span class="nf">true_gradient_func</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mi">3</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span>
+
+
+<span class="k">def</span> <span class="nf">plot_gradients</span><span class="p">(</span><span class="n">nsteps</span><span class="p">,</span><span class="n">title</span><span class="p">):</span>
+    <span class="n">xi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="n">nsteps</span><span class="p">)</span>
+    <span class="n">yi</span> <span class="o">=</span> <span class="n">black_box_func</span><span class="p">(</span><span class="n">xi</span><span class="p">)</span>
+
+    <span class="n">approx_gradient</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span><span class="n">yi</span><span class="p">,</span><span class="n">xi</span><span class="p">)</span>
+    <span class="n">true_gradient</span>   <span class="o">=</span> <span class="n">true_gradient_func</span><span class="p">(</span><span class="n">xi</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xi</span><span class="p">,</span><span class="n">yi</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;black-box func&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">xi</span><span class="p">,</span><span class="n">yi</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xi</span><span class="p">,</span><span class="n">approx_gradient</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;finite diff grad&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">xi</span><span class="p">,</span><span class="n">approx_gradient</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xi</span><span class="p">,</span><span class="n">true_gradient</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;true grad&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">xi</span><span class="p">,</span><span class="n">true_gradient</span><span class="p">)</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    
+    
+<span class="n">plot_gradients</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;it is pretty bad if Δx is too large&#39;</span><span class="p">)</span>
+<span class="n">plot_gradients</span><span class="p">(</span><span class="mi">41</span><span class="p">,</span> <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;it gets better at the cost of many evaluations&#39;</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/notebooks_4_0.png" src="_images/notebooks_4_0.png" />
+<img alt="_images/notebooks_4_1.png" src="_images/notebooks_4_1.png" />
+</div>
+</div>
 </div>
 </div>
 
@@ -342,7 +427,7 @@ with your book. For more information about this, see <a class="reference externa
     <div class="container">
       <p>
         
-          By Universidad de Alicante<br/>
+          By Universitat d'Alacant<br/>
         
             &copy; Copyright 2021.<br/>
       </p>
@@ -355,7 +440,7 @@ with your book. For more information about this, see <a class="reference externa
     </div>
 
     
-  <script src="_static/js/index.3da636dd464baa7582d2.js"></script>
+  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
 
 
     
