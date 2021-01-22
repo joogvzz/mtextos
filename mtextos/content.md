@@ -1,10 +1,11 @@
+
 Content in Jupyter Book
 =======================
 
 There are many ways to write content in Jupyter Book. This short section
 covers a few tips for how to do so.
 
-# Jupiter Book
+## Jupiter Book
 
 This book contains information about the planet Jupiter - the fifth planet from the sun and the largest planet in the solar system! {numref}`jupiter-figure` below shows an image of Jupiter captured by the Hubble Space Telescope on June 27, 2019.
 
