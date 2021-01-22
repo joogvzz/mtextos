@@ -37,10 +37,12 @@ Estos son los materiales de clase de la asignatura Minería de Textos, coordinad
 - La visita (virtual en este curso) a los profesores durante sus horas de tutoría no puede ser obligatoria por cuestiones normativas, pero es muy recomendable, ya que es la oportunidad de recibir supervisión sobre tus conocimientos de la materia o la calidad del código que has desarrollado. Reserva turno a través de UACloud con anterioridad y conéctate con o sin cámara activada a la sala virtual allí indicada. Si el horario no es compatible con tu agenda, escribe al profesor e intentará encontrar un hueco fuera de dicho horario para atenderte.
 - Las prácticas se realizan individualmente.
 
-El `código fuente`_ de estas páginas, escrito en MyST para Jupyter Book, está disponible en Github.
+El [código fuente][fuente] de estas páginas, escrito en MyST para Jupyter Book, está disponible en Github.
 
-.. _`código fuente`: https://github.com/jaspock/mtextos
+[fuente]: https://github.com/jaspock/mtextos
 
 Puedes obtener una copia local de estas páginas (por ejemplo, para poder consultarlas sin conexión) ejecutando::
 
+```
   wget --mirror --no-parent --convert-links --page-requisites https://jaspock.github.io/mtextos/
+```
