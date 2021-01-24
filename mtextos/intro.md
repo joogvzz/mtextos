@@ -27,7 +27,13 @@ Novedades
 Guía docente y normas del curso
 -------------------------------
 
-Estos son los materiales de clase de la asignatura Minería de Textos, coordinada por el profesor [Juan Antonio Pérez Ortiz][japerez_url] ([@japer3z][japerez_twitter]) de la Universitat d'Alacant e impartida también por los profesores Borja Navarro Colorado y Yoan Gutiérrez. Para obtener información sobre la evaluación de la asignatura puedes consultar la [guía docente][guía]. Algunos aspectos adicionales que no están recogidos en la guía son los siguientes:
+Estos son los materiales de clase de la asignatura Minería de Textos, coordinada por el profesor [Juan Antonio Pérez Ortiz][japerez_url] ([@japer3z][japerez_twitter]) de la Universitat d'Alacant e impartida también por los profesores Borja Navarro Colorado y Yoan Gutiérrez. 
+
+La asignatura se centra en presentar los fundamentos de las técnicas actuales para el procesamiento del lenguaje natural, pero no pretende entrar en excesivos detalles sobre modelos muy recientes, ya que el ritmo de aparición de sistemas que mejoran los resultados de los anteriores es extremadamente rápido. Como ejemplo, el conjunto de *benchmarks* llamado SuperGLUE quedó prácticamente [obsoleto en menos de dos años][superglue] por la sucesiva aparición de arquitecturas que conseguían cada vez mejores resultados en los problemas que incluía.
+
+[superglue]: https://www.microsoft.com/en-us/research/blog/microsoft-deberta-surpasses-human-performance-on-the-superglue-benchmark/
+
+Para obtener información sobre la evaluación de la asignatura puedes consultar la [guía docente][guía]. Algunos aspectos adicionales que no están recogidos en la guía son los siguientes:
 
 [japerez_url]: https://www.dlsi.ua.es/~japerez/
 [japerez_twitter]: https://twitter.com/japer3z
