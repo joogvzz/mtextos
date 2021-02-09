@@ -3,6 +3,7 @@
 - file: intro
 - file: bloque1
     - file: bloque1_1Introduccion
+    - file: bloque1_Practica1
 - file: bloque2
   sections:
     - file: bloque2_embeddings
