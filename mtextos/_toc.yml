@@ -4,6 +4,7 @@
 - file: bloque1
   sections:
     - file: bloque1_1Introduccion
+    - file: bloque1_2CategorialSintactico
     - file: bloque1_Practica1
 - file: bloque2
   sections:
