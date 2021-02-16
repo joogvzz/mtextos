@@ -8,6 +8,7 @@
     - file: bloque1_Practica1
 - file: bloque2
   sections:
+    - file: bloque2_historia
     - file: bloque2_embeddings
     - file: bloque2_recurrent
     - file: bloque2_transformer
